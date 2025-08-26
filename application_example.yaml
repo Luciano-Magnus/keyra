@@ -1,0 +1,20 @@
+openapi:
+  title: keyra API
+  version: 1.0.0
+  description: API gerada automaticamente pelo Vaden.
+  enable: true
+
+postgres:
+  host: localhost
+  database: keyra
+  port: 5432
+  username: username
+  password: password
+  ssl: disable
+
+server:
+  port: 3001
+  host: localhost
+
+env:
+  mode: debug

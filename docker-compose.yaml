@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  keyra-dashboard:
+    build:
+      context: ../keyra-dashboard
+      dockerfile: Dockerfile
+    container_name: keyra-dashboard
+    ports:
+      - "3000:3000"
+    depends_on:
+      - keyra-api
+    environment:
+      - NODE_ENV=production
+
+  keyra-api:
+    build:
+      context: ../keyra
+      dockerfile: Dockerfile
+    container_name: keyra-api
+    ports:
+      - "3001:3001"

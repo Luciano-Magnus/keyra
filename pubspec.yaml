@@ -1,0 +1,21 @@
+name: keyra
+description: A lightweight license management API. Create, validate and manage software licenses with ease..
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  postgres: ^3.5.4
+  vaden: ^0.1.1
+  uuid: ^4.5.1
+  crypto: ^3.0.6
+  auto_mapper:
+    git:
+      url: https://github.com/Luciano-Magnus/auto_mapper.git
+      ref: 1.0.3
+
+dev_dependencies:
+  build_runner: ^2.4.14
+  vaden_class_scanner: ^0.1.3
